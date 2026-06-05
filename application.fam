@@ -1,12 +1,12 @@
 App(
     appid="rfid_detector",
     name="RFID Detector",
-    apptype=FlipperAppType.EXTERNAL,
+    apptype=FlipperAppType.APP,
     entry_point="rfid_detector_app",
-    requires=["gui"],
+    requires=["gui", "notification"],
     stack_size=4 * 1024,
     fap_category="Tools",
     fap_description="LF RFID Metal & Pokemon Card Detector",
-    fap_version=(1, 0),
+    fap_version="1.0",
     fap_author="rfid_detector",
 )
